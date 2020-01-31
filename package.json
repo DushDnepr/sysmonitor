@@ -14,5 +14,13 @@
     "http-errors": "^1.7.3",
     "morgan": "~1.9.1",
     "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-metarhia": "^7.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "metatests": "^0.7.1"
   }
 }
