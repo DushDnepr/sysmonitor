@@ -4,7 +4,7 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "test": "npm run -s lint && metatests test/ && for test in ./sequential-test/*.js; do metatests \"$test\"; done",
+    "test": "npm run -s lint",
     "lint": "eslint ."
   },
   "dependencies": {
