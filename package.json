@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "npm run -s lint && metatests test/ && for test in ./sequential-test/*.js; do metatests \"$test\"; done",
-    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \".*rc\" \"**/*.yml\""
+    "lint": "eslint ."
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -18,8 +18,6 @@
   "devDependencies": {
     "eslint": "^6.0.1",
     "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "metatests": "^0.7.1",
-    "prettier": "^1.19.1"
+    "metatests": "^0.7.1"
   }
 }
