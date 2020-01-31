@@ -4,8 +4,7 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "npm run lint"
+    "test": "eslint ."
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
