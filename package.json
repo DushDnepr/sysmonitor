@@ -4,7 +4,8 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "test": "eslint ."
+    "test": "npm run -s lint && metatests test/ && for test in ./sequential-test/*.js; do metatests \"$test\"; done",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \".*rc\" \"**/*.yml\""
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -13,5 +14,8 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "prettier": "1.18.x"
   }
 }
